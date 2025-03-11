@@ -1,0 +1,268 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.942);
+}
+/* Navbar */
+header {
+  padding-left: 5px;
+  display: flex;
+  background-color: black;
+  padding-top: 5px;
+  position: absolute;
+  width: 100%;
+}
+header .Helium {
+  padding-left: 20px;
+  color: #ffff;
+  width: 50%;
+}
+header .gauche {
+  color: #ffffffcc;
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-around;
+  padding-right: 100px;
+}
+header .G {
+  min-width: 60px;
+  margin-right: 10px;
+}
+.Explorer {
+  min-width: 60px;
+  margin-left: 10rem;
+}
+.Ecosystem {
+  min-width: 60px;
+  margin-left: 10rem;
+}
+.headerScroll {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Section unique */
+.unique {
+  display: flex;
+  height: 100vh;
+  padding-left: 10px;
+  padding-top: 50px;
+}
+.unique .div1 {
+  width: 50%;
+  align-self: center;
+  padding-left: 15px;
+}
+.div1 h1 {
+  font-size: 5.2rem;
+  color: #ffff;
+  font-weight: lighter;
+  margin: 0;
+}
+.div1 .subtitle {
+  color: rgb(68, 0, 255);
+  font-size: 2rem;
+  margin: 0;
+}
+.div1 p {
+  color: #ffff;
+  font-size: small;
+  margin: 0;
+  padding-top: 10px;
+}
+.unique .div2 {
+  width: 50%;
+}
+.unique .div2 img {
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+.uniqueScroll {
+  background-color: red;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  display: flex;
+  color: #ffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+.core {
+  width: 20%;
+  text-align: center;
+}
+.core h3 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 10px;
+}
+.boutons {
+  display: flex;
+  flex-direction: column;
+}
+.core button {
+  color: #ffff;
+  background-color: blue;
+  border-radius: 10px;
+  height: 40px;
+  width: 150px;
+  align-self: center;
+}
+
+.investors {
+  padding-left: 10rem;
+}
+.icon img {
+  justify-content: space-between;
+  padding-left: 100px;
+  align-items: end;
+}
+.GV {
+  width: 5rem;
+}
+.firstmark {
+  width: 10rem;
+}
+.khosla {
+  width: 8rem;
+}
+.investors h3 {
+  font-size: 20px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  font-weight: 100;
+}
+
+/* Responsivité */
+@media screen and (max-width: 1030px) {
+  .div1 h1 {
+    font-size: 2.5rem;
+  }
+  .div1 .subtitle {
+    font-size: 1rem;
+  }
+  .div1 p {
+    font-size: x-small;
+  }
+  .div2 {
+    height: 200px;
+  }
+  .unique .div2 img {
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  footer {
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .core {
+    width: 30%;
+    text-align: center;
+  }
+  .core h3 {
+    font-size: 1rem;
+  }
+
+  .core button {
+    height: 20px;
+    width: 100px;
+  }
+  .investors {
+    padding-left: 5rem;
+  }
+  .icon img {
+    justify-content: space-between;
+    padding-left: 50px;
+    align-items: end;
+  }
+  .GV {
+    width: 2.5rem;
+  }
+  .firstmark {
+    width: 5rem;
+  }
+  .khosla {
+    width: 4rem;
+  }
+  .investors h3 {
+    font-size: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-weight: 100;
+  }
+  .unique {
+    display: flex;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .unique {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: fit-content;
+    padding-bottom: 20px;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+  .investors {
+    padding-left: 0;
+  }
+  .icon img {
+    justify-content: center;
+    padding-left: 0px;
+    align-items: center;
+  }
+  .GV {
+    width: 2rem;
+  }
+  .firstmark {
+    width: 4rem;
+  }
+  .khosla {
+    width: 3rem;
+  }
+  .investors h3 {
+    font-size: 10px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    font-weight: 50;
+  }
+  .core {
+    width: 20%;
+    text-align: start;
+    padding-left: 20px;
+  }
+  .core h3 {
+    font-size: 0.9rem;
+    font-weight: 50;
+    margin: 5px;
+  }
+  .boutons {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  .core button {
+    height: 30px;
+    width: 140px;
+    font-size: 14px;
+  }
+}
